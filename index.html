@@ -1,278 +1,189 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>dobroLimited</title>
+		<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+		<script type="text/javascript">
+            let map;
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="CSS/style.css">
-	<script src="JS/austera.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-	<title>austera.com</title>
-</head>
-<!--*****************************
-								**************Header*************
-								******************************-->
+            DG.then(function () {
+                map = DG.map('map', {
+                    center: [55.75, 37.61],
+                    zoom: 8.5,
+                });
 
-<body data-spy="scroll" data-target=".scroller">
-	<div id="Home" class="container-fluid">
-		<header class="header">
-			<div class="row menu no-gutters">
-
-				<nav class="navbar navbar-expand-lg navbar-light">
-					<a class="navbar-brand" href="#">
-						<img src="IMG/logo.png" alt="Austera">
-					</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSebi"
-						aria-controls="navbarSebi" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<div class="collapse navbar-collapse" id="navbarSebi">
-						<ul class="navbar-nav ml-lg-5 btn-group menu-1 scroller" role="group" aria-label="Basic example">
-								<li class=" nav-item">
-							<a class="nav-link btn btn-secondary active" href="#Home">Homepage</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link btn btn-secondary menu-a" href="#Service">Services</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link btn btn-secondary menu-a" href="#Me">About us</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link btn btn-secondary menu-a" href="#Contact">Contact us</a>
-							</li>
-						</ul>
-						<form class="form-inline my-2 my-lg-0 ml-lg-5">
-							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-							<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img
-									src="IMG/logo-search.png" alt="logo-search"></button>
-						</form>
-					</div>
-				</nav>
-			</div>
-
-			<div class="row menu2 no-gutters">
-				<div class="col-lg-12 col-md-12">
-					<h1><span>Austera</span> is my site template!</h1>
-					<p>This is my first site created using <span>Bootstrap4</span></p>
-					<a href="https://getbootstrap.com/">Read more</a>
-				</div>
-			</div>
-		</header>
-	</div>
-	<!--******************************
-								**********Our service*************
-								******************************-->
-	<div id="Service"></div>
-	<div class="container">
-		<section class="our-service">
-			<h2>Our service</h2>
-			<div class=" row no-gutters menu3">
-
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-					<img class="one-img" src="IMG/service-one.png" alt="Адаптивный дизайн">
-					<h3>Responsive design</h3>
-					<p>Responsive design is a website design that is correctly displayed (and easy to understand) on any
-						device (TV, tablet, phone, computer, etc.).</p>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-					<img class="two-img" src="IMG/service-three.png" alt="Невероятная особенность">
-					<h3 class="two-h3">Incredible feature</h3>
-					<p>A variety of Internet resources, web services, and online tools make life easier for users,
-						entertain, inform, or help solve a specific task.</p>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-					<img class="three-img" src="IMG/service-four.png" alt="Свежие идеи<">
-					<h3 class="three-h3">Fresh idea</h3>
-					<p>We share the principle of " do it yourself" and give people all the necessary ideas for creating
-						a website, and therefore for implementing their business plans.</p>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-					<img class="four-img" src="IMG/service-two.png" alt="Превосходная безопасность">
-					<h3 class="four-h3">Excellent security</h3>
-					<p>HTTPS is a kind of protective shell for regular HTTP, which allows you to securely encrypt
-						information transmitted from the user to the server and back. This encryption does not allow
-						data leakage, which means that it protects the site from hacking.</p>
-				</div>
-				<a class="buttone" href="https://www.front-end-developer.com/">View services</a>
-			</div>
-			<div class="p1">
-				<div class=" row no-gutters menu4">
-					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<h3>Web design for Everyone</h3>
-						<p>Good website design is the key to success in building trust between users and the brand,
-							setting up communication with the target audience , and promoting in the conversion funnel.
-							In fact, you need to be able to effectively use the placement of CTA-elements, spaces,
-							colors, fonts , and other auxiliary elements.</p>
-						<a href="https://en.wikipedia.org/wiki/Web_design">Show more</a>
-					</div>
-					<div class="col-lg-6 col-md-6">
-						<img src="IMG/note-book-2.png" alt="NoteBook">
-					</div>
-				</div>
-				<div class="p2">
-					<div class=" row no-gutters menu5">
-						<div class="col-lg-6 col-md-6">
-							<img class="go-pro" src="IMG/go-pro-2.png" alt="GoPro">
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<h3>Web-development</h3>
-							<p>Web design is a type of graphic design aimed at developing and decorating objects of the
-								Internet information environment, designed to provide them with high consumer properties
-								and aesthetic qualities . This interpretation separates web design from web programming,
-								emphasizes the specifics of the subject activity of the web designer, and positions web
-								design as a type of graphic design.</p>
-							<a href="https://www.bitdegree.org/tutorials/what-is-a-web-developer/">Show more</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-	<!--******************************
-								**********Lupu Sevastian**********
-								******************************-->
-	<section class="container-fluid me">
-		<div id="Me"></div>
-		<div class="row no-gutters program">
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				<img src="IMG/prog.jpg" alt="Programmer">
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				<h3>My name is Lupu Sevastian</h3>
-				<p>Hello everybody! I am a Junior Front-End Developer and started my career in this field by the age of
-					22! As a developer, I have four main advantages: responsibility, communication skills, initiative ,
-					and creativity. In the future, I want to succeed in many aspects, and I am working on the following
-					qualities: analytical mindset, perseverance, algorithmic approach and good concentration - which
-					will make me a "professional"!</p>
-				<a href="https://www.coursera.org/user/9aa1f6f34311a5a75e94c3230940a8e8">Show more</a>
-			</div>
-		</div>
-	</section>
-	<!--******************************
-								******4 blocks with photos********
-								******************************-->
-	<section class="container-fluid">
-		<div class=" row no-gutters the-blocks">
-			<div class="col-lg-3 col-md-6 one-block">
-				<h4>Responsibility</h4>
-			</div>
-			<div class="col-lg-3 col-md-6  two-block">
-				<h4>Communicability</h4>
-			</div>
-			<div class="col-lg-3 col-md-6  three-block">
-				<h4>Initiativity</h4>
-			</div>
-			<div class="col-lg-3 col-md-6  four-block">
-				<h4>Creativity</h4>
-			</div>
-		</div>
-	</section>
-	<!--******************************
-								**********Awesome team************
-								******************************-->
-	<section class="container my-team">
-		<div class="row no-gutters">
-			<h2 class="col-lg-12">Check our<span><br>awesome team</span></h2>
-		</div>
-		<div class="row no-gutters">
-			<div class="col-lg-4 col-md-6 col-sm-6 teams">
-				<img src="IMG/me.png" alt="MyPhoto">
-				<div class="name">Lupu Sevastian</div>
-				<span class="one-span">Junior Front-end Developer</span>
-				<a class="one-a">View profile</a>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-6 teams">
-				<img src="IMG/my-wife.png" alt="MyWifePhoto" class="two-image">
-				<div class="name2">Lupu Anna</div>
-				<span class="two-span">Wonderful-Wife</span>
-				<a class="two-a">View profile</a>
-			</div>
-			<div class="col-lg-4 col-md-12 col-sm-12 teams">
-				<img src="IMG/my-cat2.png" class="image3" alt="MyCatPhoto">
-				<div class="name3">Barsa</div>
-				<span class="three-span">General Director</span>
-				<a class="three-a">View profile</a>
-			</div>
-		</div>
-	</section>
-	<!--******************************
-								************Contact us************
-								******************************-->
-	<section class="footer">
-		<div id="Contact"></div>
-		<div class="container">
-			<div class="row no-gutters">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="contact">Contact us</div>
-					<!--TRANSLATE-->
-					<h3>"神は光です"</h3>
-					<!--TRANSLATE-->
-					<p class="street">Russia / Amur Oblast / Skovorodino / str.Pobeda</p>
-					<p>Telephone: <span class="whites">+7 924 237 237 1</span></p>
-					<p>E-mail: <span class="whites">sebi.26.03.97@mail.ru</span></p>
-					<ul>
-
-						<li><a href=""><img src="IMG/google.png" alt="Google"
-									onclick="alert('My Gmail: sevastyan.fcb10@gmail.com'); return false;"></a></li>
-						<li><a href=""><img src="IMG/whatsapp.png" alt="WhatsApp"
-									onclick="alert('My WhatsApp: +79242372371'); return false;"></a></li>
-						<li><a href=""><img src="IMG/vk.png" alt="VK"
-									onclick="alert('My VKontakte: vk.com/id257265020'); return false;"></a></li>
-						<li><a href=""><img src="IMG/viber.png" alt="Viber"
-									onclick="alert('My Viber: +37360080914'); return false;"></a></li>
-						<li><a href=""><img src="IMG/mail.png" alt="MailRu"
-									onclick="alert('My MailRu: sebi.26.03.97@mail.ru'); return false;"></a></li>
-						<!--JS 'alert' function after a click <img>-->
-
-					</ul>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<form action="/" method="POST">
-						<input type="text" name="name" maxlength="20" placeholder="Your name" required>
-						<input type="email" name="email" maxlength="50" placeholder="Your e-mail" required>
-
-						<textarea name="message" id="textarea" maxlength="300"
-							onclick='if(this.value=="Your message") this.value=""'
-							onblur='if(this.value=="") this.value="Your message"' rows="6"
-							required>Your message</textarea>
-						<!--JS 'onclick' function for <textarea>, text disappears after a click-->
-
-						<button>Send</button>
-
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer class="container-fluid footer">
-		<div class="row no-gutters">
-			<div class="col-lg-6 col-md-6 d-none d-lg-block d-md-block">
-				<ul>
-					<li><a href="#Home">Homepage</a></li>
-					<li><a href="#Service">Services</a></li>
-					<li><a href="#Me">About us</a></li>
-					<li><a href="#Contact">Contact us</a></li>
+                DG.marker([55.75, 37.61]).addTo(map).bindPopup('Москва и Московская область');
+            });
+        </script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	</head>
+	<body>
+	<header>
+		<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-lg-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#Home">Главная<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Graphic">Граффик</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Explore">Карта</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Precaution">Меры предосторожности</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Contacts">Контакты</a>
+					</li>
 				</ul>
 			</div>
-			<div class="col-lg-6 col-md-6">
-				<p>Copyright ⓒ 2020. All rights reserved by LupuSevastian</p>
+		</div>
+		</nav>
+	</header>
+	<div class="jumbotron jumbotron-fluid height100p banner" id="Home">
+		<div class="container h100">
+		<div class="contentBox h100">
+			<h1>Берегите своё здоровье</h1>
+			<p>Proin faucibus purus quis tempus varius. Morbi ac dapibus sem, at dictum tellus. Aenean neque mauris, faucibus ut odio et, faucibus pharetra ante. In lacinia lectus vel urna accumsan facilisis. Curabitur aliquam tortor et nibh aliquam, vitae porttitor odio pulvinar. Aenean rhoncus viverra nisl, nec bibendum diam dapibus eu. Praesent in tortor felis. Fusce a gravida nibh. Etiam finibus sit amet dui vitae finibus. Aenean lacinia tristique rhoncus.</p>
+		</div>
+		</div>
+	</div>
+	<section class="sec1" id="Graphic">
+		<div class="container">
+			<div class="row">
+				<div class="offset-sm-2 col-sm-8">
+					<div class="headerText text-center">
+						<h2>Граффик заболеваемости!</h2>
+						<p>Число заболевших в Москве, Московской области и по России:</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="placeBox">
+						<div class="imageBx">
+							<img src="IMG/image-1.jpg" alt="MosckowTable" class="img-fluid graphic">
+						</div>
+						<div class="content">
+							<h3>Москва:<br><span>05.05.2020</span></h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="placeBox">
+						<div class="imageBx">
+							<img src="IMG/image-2.jpg" alt="MosckowTable" class="img-fluid graphic">
+						</div>
+						<div class="content">
+							<h3>Московская область:<br><span>19.05.2020</span></h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="placeBox">
+						<div class="imageBx">
+							<img src="IMG/image-3.png" alt="MosckowTable" class="img-fluid graphic">
+						</div>
+						<div class="content">
+							<h3>Россия:<br><span>06.05.2020</span></h3>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</footer>
+	</section>
+	<section class="sec2" id="Explore">
+			<div class="container h100">
+				<div class="contentBox h100">
+					<h3>Карта Москвы и Московской области:</h3>
+					<div id="map" style="width:500px; height:400px"></div>
+				</div>
+			</div>
+	</section>
+	<section class="precaution" id="Precaution">
+		<div class="container">
+			<div class="row">
+				<div class="offset-sm-2 col-sm-8">
+					<div class="headerText">
+						<h2>Меры предосторожности</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="blogpost">
+						<div class="imgBx">
+							<img src="IMG/maski.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="content">
+							<h1>Носите маски</h1>
+							<p>Proin faucibus purus quis tempus varius. Morbi ac dapibus sem, at dictum tellus. Aenean neque mauris, faucibus ut odio et, faucibus pharetra ante. In lacinia lectus vel urna accumsan facilisis. Curabitur aliquam tortor et nibh aliquam, vitae porttitor odio pulvinar. Aenean rhoncus viverra nisl, nec bibendum diam dapibus eu. Praesent in tortor felis. Fusce a gravida nibh. Etiam finibus sit amet dui vitae finibus. Aenean lacinia tristique rhoncus.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="blogpost">
+						<div class="imgBx">
+							<img src="IMG/liudi.png" alt="" class="img-fluid">
+						</div>
+						<div class="content">
+							<h1>Избегайте людей</h1>
+							<p>Proin faucibus purus quis tempus varius. Morbi ac dapibus sem, at dictum tellus. Aenean neque mauris, faucibus ut odio et, faucibus pharetra ante. In lacinia lectus vel urna accumsan facilisis. Curabitur aliquam tortor et nibh aliquam, vitae porttitor odio pulvinar. Aenean rhoncus viverra nisl, nec bibendum diam dapibus eu. Praesent in tortor felis. Fusce a gravida nibh. Etiam finibus sit amet dui vitae finibus. Aenean lacinia tristique rhoncus.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="blogpost">
+						<div class="imgBx">
+							<img src="IMG/ruki.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="content">
+							<h1>Мойте чаще руки</h1>
+							<p>Proin faucibus purus quis tempus varius. Morbi ac dapibus sem, at dictum tellus. Aenean neque mauris, faucibus ut odio et, faucibus pharetra ante. In lacinia lectus vel urna accumsan facilisis. Curabitur aliquam tortor et nibh aliquam, vitae porttitor odio pulvinar. Aenean rhoncus viverra nisl, nec bibendum diam dapibus eu. Praesent in tortor felis. Fusce a gravida nibh. Etiam finibus sit amet dui vitae finibus. Aenean lacinia tristique rhoncus.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="blogpost">
+						<div class="imgBx">
+							<img src="IMG/eda.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="content">
+							<h1>Здоровое питание</h1>
+							<p>Proin faucibus purus quis tempus varius. Morbi ac dapibus sem, at dictum tellus. Aenean neque mauris, faucibus ut odio et, faucibus pharetra ante. In lacinia lectus vel urna accumsan facilisis. Curabitur aliquam tortor et nibh aliquam, vitae porttitor odio pulvinar. Aenean rhoncus viverra nisl, nec bibendum diam dapibus eu. Praesent in tortor felis. Fusce a gravida nibh. Etiam finibus sit amet dui vitae finibus. Aenean lacinia tristique rhoncus.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact" id="Contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="headerText text-center">
+						<h2>Связаться с нами</h2>
+						<p>Praesent in tortor felis. Fusce a gravida nibh. Etiam finibus sit amet dui vitae finibus. Aenean lacinia tristique rhoncus.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-		crossorigin="anonymous"></script>
-</body>
 
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	</body>
 </html>
