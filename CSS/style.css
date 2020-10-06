@@ -2,6 +2,7 @@
 
 * {
   outline: none !important;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -31,6 +32,10 @@ p {
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
   color: #000;
   background: #fff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link:hover {
+  color: #000;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -314,7 +319,6 @@ p {
   text-transform: uppercase;
   color: #fff;
   border-radius: 25px;
-  outline: none;
   background: -webkit-gradient(linear, left top, right top, from(#03a9f4), color-stop(#f441a5), color-stop(#ffeb3b), to(#03a9f4));
   background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
   background-size: 400%;

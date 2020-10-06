@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="CSS/style.css">
 	</head>
-	<body>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 			<a class="navbar-brand" href="#">
@@ -20,7 +20,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-lg-auto">
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a class="nav-link" href="#Home">Главная<span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
@@ -190,5 +190,14 @@
 				$('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
 			});
 		</script>
+		<script type="text/javascript">
+			$(function(){
+					$("a[href^='#']").click(function(){
+							var _href = $(this).attr("href");
+							$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+							return false;
+					});
+			});
+			</script>
 	</body>
 </html>
