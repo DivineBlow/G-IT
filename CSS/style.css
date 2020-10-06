@@ -58,30 +58,32 @@ p {
   top: 0;
   width: 100%;
   height: 100vh;
-  background: url(https://krasnodar.metall.life/uploads/main/00n/b4b5ba55f4d4f83ceeb3eedd2fadebcfe5e15a2aa3ac34f204ca7c363ac3f788/shutterstock_1061069282_2560x1575.jpeg) center center;
+  background: url(https://krot.info/uploads/posts/2020-01/1579625543_2-p-chernie-foni-s-grafikoi-5.jpg);
   background-size: cover;
   margin-bottom: 0;
 }
 
-.banner:before {
+.banner:before,
+.sec2:before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 400px;
-  background: linear-gradient(#8f3020, transparent);
+  background: linear-gradient(#000, transparent);
   pointer-events: none;
 }
 
-.banner:after {
+.banner:after,
+.sec2:after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 400px;
-  background: linear-gradient(360deg, #1e5082, transparent);
+  background: linear-gradient(360deg, #000, transparent);
   pointer-events: none;
 }
 
@@ -122,6 +124,7 @@ p {
 
 .headerText {
   color: #fff;
+  text-align: center;
 }
 
 .headerText h2 {
@@ -169,4 +172,68 @@ p {
   font-weight: 600;
   width: 100%;
   text-align: center;
+}
+
+.sec2 {
+  position: relative;
+  background: url(https://goocurrency.com/wp-content/uploads/2018/07/Geometry-Wallpaper-23097.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.sec2 h2 {
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.precaution {
+  position: relative;
+  padding: 100px 0;
+  background: #000;
+}
+
+.blogpost {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  background: #fff;
+}
+
+.blogpost .imgBx {
+  height: 500px;
+}
+
+.blogpost .imgBx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blogpost .content {
+  padding: 15px;
+}
+
+.blogpost .content h1 {
+  margin: 0;
+  padding: 0 0 10px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.btnD1,
+.btnD1:hover 
+{
+  background: #262626;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  float: right;
+}
+
+.contact {
+  position: relative;
+  padding: 100px 0;
+  background: url()
 }
