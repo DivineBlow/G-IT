@@ -64,7 +64,9 @@ p {
 }
 
 .banner:before,
-.sec2:before {
+.sec2:before,
+.contact:before
+{
   content: '';
   position: absolute;
   top: 0;
@@ -76,7 +78,9 @@ p {
 }
 
 .banner:after,
-.sec2:after {
+.sec2:after,
+.contact:after 
+{
   content: '';
   position: absolute;
   bottom: 0;
@@ -222,18 +226,133 @@ p {
   font-size: 1.5rem;
 }
 
-.btnD1,
-.btnD1:hover 
+.btnD1
 {
-  background: #262626;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 35px;
+  width: 190px;
+  height: 50px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
   color: #fff;
   border-radius: 30px;
+  outline: none;
+  background: -webkit-gradient(linear, left top, right top, from(#03a9f4), color-stop(#f441a5), color-stop(#ffeb3b), to(#03a9f4));
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 350%;
   padding: 10px 20px;
   float: right;
+}
+
+.btnD1:focus,
+.btnD2:focus,
+.btnD1:active,
+.btnD2active 
+{
+  outline: none;
+  box-shadow: none;
+}
+
+.btnD2:hover {
+  color: #fff;
+  -webkit-animation: animate 8s linear infinite;
+  animation: animate 8s linear infinite;
 }
 
 .contact {
   position: relative;
   padding: 100px 0;
-  background: url()
+  background: url(https://s2.best-wallpaper.net/wallpaper/2880x1800/1809/Colorful-triangle-geometric-abstract_2880x1800.jpg);
+  background-size: cover;
+  min-height: 100vh;;
+}
+
+.contact form {
+  position: relative;
+  z-index: 1000;
+}
+
+.contact .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255,255,255,.2);
+  height: 50px;
+  border-radius: 0;
+  background: rgba(0,0,0,.6);
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.contact .form-control:focus,
+.contact .form-control:hover {
+  border: none;
+  border-bottom: 2px solid rgba(255,255,255,.1);
+  box-shadow: none;
+}
+
+.contact .textarea {
+  min-height: 100px;
+} 
+
+.contact label {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.btnD2 {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 35px;
+  width: 190px;
+  height: 50px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 25px;
+  outline: none;
+  background: -webkit-gradient(linear, left top, right top, from(#03a9f4), color-stop(#f441a5), color-stop(#ffeb3b), to(#03a9f4));
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+
+.btnD1:hover,
+.btnD2:hover 
+{
+  color: #fff;
+  -webkit-animation: animate 8s linear infinite;
+  animation: animate 8s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+footer {
+  background: #000;
+  padding: 50px 0 0 ;
+}
+
+.cpryt {
+  color: #57a8ff;
+  text-align: center;
+  margin: 20px auto;
 }
