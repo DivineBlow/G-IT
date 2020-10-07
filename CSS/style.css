@@ -360,3 +360,55 @@ footer {
   text-align: center;
   margin: 20px auto;
 }
+
+@media (min-width: 992px) {
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .navbar-light .navbar-toggler {
+    background: #fff;
+    border-radius: 0;
+  }
+
+  .banner {
+    height: 100vh;
+    padding: 100px 0;
+  }
+
+  .contentBox h1,
+  .sec2 {
+    font-size: 2rem;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sec1 {
+    padding: 20px 0;
+  }
+
+  .headerText h2 {
+    font-size: 2rem;
+  }
+
+  .precaution .imgBx {
+    height: 400px;
+  }
+
+  .contact {
+    padding: 20px 0;
+  }
+
+  .contact .form-control {
+    height: 40px;
+    
+  }
+}
