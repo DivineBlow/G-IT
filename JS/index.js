@@ -2,7 +2,7 @@
 let map;
 DG.then(function () {
     map = DG.map('map', {
-        center: [55.75, 37.61],
+        center: [55.75583, 37.6173],
         zoom: 8.5,
 });
 DG.marker([55.75, 37.61]).addTo(map).bindPopup('Москва и Московская область');
