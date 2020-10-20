@@ -28,6 +28,11 @@ p {
   transition: 0.5s;
 }
 
+.nav-link {
+  border-radius: 5px;
+}
+
+
 .navbar.scrolled {
   background: #000 !important;
   transition: 0.5s;
